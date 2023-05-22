@@ -55,7 +55,7 @@ else
 fi
 
 for DISTRO in ${TO_TEST[@]}; do
-	container_tag="ros:$DISTRO-ros-base-l4t-r$L4T_VERSION"
+	container_tag="ros:$DISTRO-desktop-l4t-r$L4T_VERSION"
 	test_ros_version $container_tag
 	
 	if [[ "$DISTRO" != "melodic" ]] && [[ "$DISTRO" != "noetic" ]] && [[ "$DISTRO" != "eloquent" ]]; then
